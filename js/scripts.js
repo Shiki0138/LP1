@@ -1,11 +1,13 @@
 // ページローディングアニメーション
 window.addEventListener('load', function() {
+    // すぐにpreloaderを非表示にし、bodyにloadedクラスを追加
+    document.body.classList.add('loaded');
     const preloader = document.querySelector('.preloader');
-    setTimeout(() => {
-        document.body.classList.add('loaded');
-    }, 800);
-
-    // すべての画像が読み込まれたことを確認
+    if (preloader) {
+        preloader.style.display = 'none';
+    }
+    
+    // すべての画像が読み込まれたか確認
     const allImages = document.querySelectorAll('img');
     let loadedImages = 0;
     
@@ -23,6 +25,16 @@ window.addEventListener('load', function() {
             img.addEventListener('load', checkAllImagesLoaded);
         }
     });
+    
+    // モバイルかどうかを検出
+    const isMobile = window.innerWidth <= 768;
+    
+    // モバイルの場合、AOSアニメーションを無効化
+    if (isMobile && typeof AOS !== 'undefined') {
+        AOS.init({
+            disable: true
+        });
+    }
 });
 
 // DOM要素が読み込まれたら実行
@@ -32,18 +44,32 @@ document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelector('.nav-links');
     
     if (mobileMenuBtn) {
-        mobileMenuBtn.addEventListener('click', function() {
+        mobileMenuBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
             mobileMenuBtn.classList.toggle('active');
             navLinks.classList.toggle('active');
         });
     }
     
+    // 画面の空白部分をクリックしたらメニューを閉じる
+    document.addEventListener('click', function(e) {
+        if (navLinks && navLinks.classList.contains('active') && 
+            !e.target.closest('.nav-links') && 
+            !e.target.closest('.mobile-menu-btn')) {
+            navLinks.classList.remove('active');
+            mobileMenuBtn.classList.remove('active');
+        }
+    });
+    
     // ナビゲーションリンクがクリックされたらメニューを閉じる
     const navLinksArray = document.querySelectorAll('.nav-links a');
     navLinksArray.forEach(link => {
         link.addEventListener('click', function() {
-            navLinks.classList.remove('active');
-            mobileMenuBtn.classList.remove('active');
+            if (window.innerWidth <= 768) {
+                navLinks.classList.remove('active');
+                mobileMenuBtn.classList.remove('active');
+            }
         });
     });
     
@@ -97,7 +123,10 @@ document.addEventListener('DOMContentLoaded', function() {
         duration: 800,
         easing: 'ease-in-out',
         once: true,
-        mirror: false
+        mirror: false,
+        offset: 50,
+        delay: 100,
+        disable: 'mobile'
     });
     
     // ヒーローセクションとギャラリーセクションのパララックス効果
