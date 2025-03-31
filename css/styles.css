@@ -16,15 +16,12 @@
     h1 {
         font-size: 2.8rem;
     }
-    
     h2 {
         font-size: 2.2rem;
     }
-    
     .hero h1 {
         font-size: 3.2rem;
     }
-    
     .services-grid,
     .testimonials-grid,
     .gallery-grid {
@@ -36,30 +33,24 @@
     h1 {
         font-size: 2.5rem;
     }
-    
     h2 {
         font-size: 2rem;
     }
-    
     .hero {
         min-height: 500px;
         height: auto;
         padding: 100px 0;
     }
-    
     .hero h1 {
         font-size: 2.8rem;
     }
-    
     .hero p {
         font-size: 1.2rem;
     }
-    
     .section {
         padding: 4rem 0;
         overflow: visible;
     }
-    
     .nav-links {
         display: none;
         position: absolute;
@@ -73,30 +64,24 @@
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
         z-index: 1000;
     }
-    
     .nav-links.active {
         display: flex;
     }
-    
     .nav-links a {
         padding: 1rem 0;
     }
-    
     .mobile-menu-btn {
         display: block;
     }
-    
     .services-grid,
     .testimonials-grid,
     .gallery-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
-    
     .footer-grid {
         grid-template-columns: 1fr;
     }
-    
     .footer-links {
         margin-top: 2rem;
     }
@@ -106,59 +91,47 @@
     .container {
         padding: 0 1.5rem;
     }
-    
     h1 {
         font-size: 2rem;
     }
-    
     h2 {
         font-size: 1.7rem;
     }
-    
     .hero {
         min-height: 450px;
         padding: 80px 0;
     }
-    
     .hero h1 {
         font-size: 2.3rem;
     }
-    
     .hero p {
         font-size: 1.1rem;
     }
-    
     .btn {
         padding: 0.8rem 1.5rem;
         font-size: 1rem;
     }
-    
     .service-card,
     .testimonial-card {
         padding: 1.5rem;
     }
-    
     .gallery-item {
         height: 200px;
     }
-    
     .back-to-top {
         width: 40px;
         height: 40px;
         bottom: 20px;
         right: 20px;
     }
-    
     .footer-about,
     .footer-links {
         text-align: center;
     }
-    
     .footer-links h3::after {
         left: 50%;
         transform: translateX(-50%);
     }
-    
     .social-links {
         justify-content: center;
     }
