@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Straight Beauty Salon | 縮毛矯正・髪質改善専門美容室</title>
     <meta name="description" content="くせ毛、広がり、パサつきにさよなら。理想の艶髪へ導く縮毛矯正・髪質改善専門サロン。20代〜40代女性に人気の美容室です。">
-    <link rel="stylesheet" href="CSS/reset.css">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;500;700&display=swap" rel="stylesheet">
@@ -47,66 +47,29 @@
                 <span></span>
             </div>
         </div>
-    </section>
+    </header>
 
-    <!-- 予約・問い合わせ -->
-    <section id="reservation" class="reservation">
-        <div class="container">
-            <h2 class="section-title">ご予約・お問い合わせ</h2>
-            <p class="section-subtitle">お気軽にご連絡ください</p>
-            
-            <div class="reservation-content">
-                <div class="reservation-methods">
-                    <div class="reservation-method">
-                        <h3><i class="fab fa-line"></i> LINE予約</h3>
-                        <p>公式LINEから24時間いつでもご予約いただけます。<br>初回限定クーポンもLINEから取得できます！</p>
-                        <a href="#" class="btn-line">LINE予約はこちら <i class="fas fa-chevron-right"></i></a>
-                    </div>
-                    <div class="reservation-method">
-                        <h3><i class="fas fa-phone"></i> 電話予約</h3>
-                        <p>お電話でのご予約も承っております。ご不明点なども直接ご質問いただけます。</p>
-                        <a href="tel:000-000-0000" class="btn-tel">000-000-0000</a>
-                        <p class="reservation-hours">受付時間：10:00〜19:00（定休日を除く）</p>
-                    </div>
+    <!-- メインビジュアル -->
+    <section class="hero">
+        <div class="hero-content container">
+            <div class="hero-text fade-in">
+                <span class="limited-offer"><i class="fas fa-fire"></i> 初回限定20%OFF</span>
+                <h2 class="hero-title">あなたの髪の悩みを解決する<br>縮毛矯正専門サロン</h2>
+                <p class="hero-subtitle">くせ毛、広がり、パサつきにさよなら。<br>理想の艶髪へ</p>
+                
+                <div class="hero-badges">
+                    <div class="hero-badge"><i class="fas fa-check-circle"></i> 満足度98%</div>
+                    <div class="hero-badge"><i class="fas fa-users"></i> 月間来店200名以上</div>
+                    <div class="hero-badge"><i class="fas fa-award"></i> 髪質改善サロン認定</div>
                 </div>
                 
-                <div class="contact-form">
-                    <h3>お問い合わせフォーム</h3>
-                    <form action="#" method="post">
-                        <div class="form-group">
-                            <label for="name">お名前 <span class="required">必須</span></label>
-                            <input type="text" id="name" name="name" placeholder="例：山田 花子" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">メールアドレス <span class="required">必須</span></label>
-                            <input type="email" id="email" name="email" placeholder="例：example@mail.com" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="tel">電話番号</label>
-                            <input type="tel" id="tel" name="tel" placeholder="例：090-1234-5678">
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">お問い合わせ内容 <span class="required">必須</span></label>
-                            <select id="subject" name="subject" required>
-                                <option value="">選択してください</option>
-                                <option value="reservation">予約について</option>
-                                <option value="menu">メニュー・料金について</option>
-                                <option value="first">初めての来店について</option>
-                                <option value="other">その他</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">メッセージ <span class="required">必須</span></label>
-                            <textarea id="message" name="message" placeholder="ご質問・ご相談内容をご記入ください" required></textarea>
-                        </div>
-                        <div class="form-submit">
-                            <button type="submit" class="btn-submit">送信する <i class="fas fa-paper-plane"></i></button>
-                        </div>
-                        <p class="form-privacy">
-                            ※ご入力いただいた個人情報は、お問い合わせへの対応以外には使用いたしません。<br>
-                            <a href="#">プライバシーポリシー</a>をご確認ください。
-                        </p>
-                    </form>
+                <a href="#reservation" class="btn-primary">今すぐ予約する <i class="fas fa-chevron-right"></i></a>
+            </div>
+            <div class="hero-image fade-in">
+                <!-- ここに美髪のビフォーアフター画像が入ります -->
+                <div class="placeholder-image">
+                    ビフォーアフター画像
+                    <span class="before-after-label">Before → After</span>
                 </div>
             </div>
         </div>
@@ -187,33 +150,8 @@
         });
     });
     </script>
-    </header>
-
-    <!-- メインビジュアル -->
-    <section class="hero">
-        <div class="hero-content container">
-            <div class="hero-text fade-in">
-                <span class="limited-offer"><i class="fas fa-fire"></i> 初回限定20%OFF</span>
-                <h2 class="hero-title">あなたの髪の悩みを解決する<br>縮毛矯正専門サロン</h2>
-                <p class="hero-subtitle">くせ毛、広がり、パサつきにさよなら。<br>理想の艶髪へ</p>
-                
-                <div class="hero-badges">
-                    <div class="hero-badge"><i class="fas fa-check-circle"></i> 満足度98%</div>
-                    <div class="hero-badge"><i class="fas fa-users"></i> 月間来店200名以上</div>
-                    <div class="hero-badge"><i class="fas fa-award"></i> 髪質改善サロン認定</div>
-                </div>
-                
-                <a href="#reservation" class="btn-primary">今すぐ予約する <i class="fas fa-chevron-right"></i></a>
-            </div>
-            <div class="hero-image fade-in">
-                <!-- ここに美髪のビフォーアフター画像が入ります -->
-                <div class="placeholder-image">
-                    ビフォーアフター画像
-                    <span class="before-after-label">Before → After</span>
-                </div>
-            </div>
-        </div>
-    </section>
+</body>
+</html>
 
     <!-- サロンの特徴・強み -->
     <section id="features" class="features">
@@ -648,3 +586,67 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- 予約・問い合わせ -->
+    <section id="reservation" class="reservation">
+        <div class="container">
+            <h2 class="section-title">ご予約・お問い合わせ</h2>
+            <p class="section-subtitle">お気軽にご連絡ください</p>
+            
+            <div class="reservation-content">
+                <div class="reservation-methods">
+                    <div class="reservation-method">
+                        <h3><i class="fab fa-line"></i> LINE予約</h3>
+                        <p>公式LINEから24時間いつでもご予約いただけます。<br>初回限定クーポンもLINEから取得できます！</p>
+                        <a href="#" class="btn-line">LINE予約はこちら <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                    <div class="reservation-method">
+                        <h3><i class="fas fa-phone"></i> 電話予約</h3>
+                        <p>お電話でのご予約も承っております。ご不明点なども直接ご質問いただけます。</p>
+                        <a href="tel:000-000-0000" class="btn-tel">000-000-0000</a>
+                        <p class="reservation-hours">受付時間：10:00〜19:00（定休日を除く）</p>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>お問い合わせフォーム</h3>
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label for="name">お名前 <span class="required">必須</span></label>
+                            <input type="text" id="name" name="name" placeholder="例：山田 花子" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">メールアドレス <span class="required">必須</span></label>
+                            <input type="email" id="email" name="email" placeholder="例：example@mail.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="tel">電話番号</label>
+                            <input type="tel" id="tel" name="tel" placeholder="例：090-1234-5678">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">お問い合わせ内容 <span class="required">必須</span></label>
+                            <select id="subject" name="subject" required>
+                                <option value="">選択してください</option>
+                                <option value="reservation">予約について</option>
+                                <option value="menu">メニュー・料金について</option>
+                                <option value="first">初めての来店について</option>
+                                <option value="other">その他</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">メッセージ <span class="required">必須</span></label>
+                            <textarea id="message" name="message" placeholder="ご質問・ご相談内容をご記入ください" required></textarea>
+                        </div>
+                        <div class="form-submit">
+                            <button type="submit" class="btn-submit">送信する <i class="fas fa-paper-plane"></i></button>
+                        </div>
+                        <p class="form-privacy">
+                            ※ご入力いただいた個人情報は、お問い合わせへの対応以外には使用いたしません。<br>
+                            <a href="#">プライバシーポリシー</a>をご確認ください。
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
