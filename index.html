@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Straight Beauty Salon | 縮毛矯正・髪質改善専門美容室</title>
     <meta name="description" content="くせ毛、広がり、パサつきにさよなら。理想の艶髪へ導く縮毛矯正・髪質改善専門サロン。20代〜40代女性に人気の美容室です。">
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;500;700&display=swap" rel="stylesheet">
@@ -47,6 +47,146 @@
                 <span></span>
             </div>
         </div>
+    </section>
+
+    <!-- 予約・問い合わせ -->
+    <section id="reservation" class="reservation">
+        <div class="container">
+            <h2 class="section-title">ご予約・お問い合わせ</h2>
+            <p class="section-subtitle">お気軽にご連絡ください</p>
+            
+            <div class="reservation-content">
+                <div class="reservation-methods">
+                    <div class="reservation-method">
+                        <h3><i class="fab fa-line"></i> LINE予約</h3>
+                        <p>公式LINEから24時間いつでもご予約いただけます。<br>初回限定クーポンもLINEから取得できます！</p>
+                        <a href="#" class="btn-line">LINE予約はこちら <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                    <div class="reservation-method">
+                        <h3><i class="fas fa-phone"></i> 電話予約</h3>
+                        <p>お電話でのご予約も承っております。ご不明点なども直接ご質問いただけます。</p>
+                        <a href="tel:000-000-0000" class="btn-tel">000-000-0000</a>
+                        <p class="reservation-hours">受付時間：10:00〜19:00（定休日を除く）</p>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>お問い合わせフォーム</h3>
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label for="name">お名前 <span class="required">必須</span></label>
+                            <input type="text" id="name" name="name" placeholder="例：山田 花子" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">メールアドレス <span class="required">必須</span></label>
+                            <input type="email" id="email" name="email" placeholder="例：example@mail.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="tel">電話番号</label>
+                            <input type="tel" id="tel" name="tel" placeholder="例：090-1234-5678">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">お問い合わせ内容 <span class="required">必須</span></label>
+                            <select id="subject" name="subject" required>
+                                <option value="">選択してください</option>
+                                <option value="reservation">予約について</option>
+                                <option value="menu">メニュー・料金について</option>
+                                <option value="first">初めての来店について</option>
+                                <option value="other">その他</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">メッセージ <span class="required">必須</span></label>
+                            <textarea id="message" name="message" placeholder="ご質問・ご相談内容をご記入ください" required></textarea>
+                        </div>
+                        <div class="form-submit">
+                            <button type="submit" class="btn-submit">送信する <i class="fas fa-paper-plane"></i></button>
+                        </div>
+                        <p class="form-privacy">
+                            ※ご入力いただいた個人情報は、お問い合わせへの対応以外には使用いたしません。<br>
+                            <a href="#">プライバシーポリシー</a>をご確認ください。
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h2 class="footer-logo">Straight Beauty Salon</h2>
+                    <p class="footer-address">〒000-0000 東京都○○区○○町0-0-0 ○○ビル1F</p>
+                    <p class="footer-tel">TEL: 000-000-0000</p>
+                    <p class="footer-hours">営業時間: 10:00〜19:00（最終受付18:00）</p>
+                    <p class="footer-closed">定休日: 毎週月曜日、第3火曜日</p>
+                </div>
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="#about">サロン紹介</a></li>
+                        <li><a href="#features">特徴・強み</a></li>
+                        <li><a href="#gallery">ビフォーアフター</a></li>
+                        <li><a href="#menu">メニュー・料金</a></li>
+                        <li><a href="#stylists">スタイリスト</a></li>
+                        <li><a href="#access">アクセス</a></li>
+                        <li><a href="#reservation">ご予約</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link" aria-label="LINE"><i class="fab fa-line"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2025 Straight Beauty Salon All Rights Reserved.</p>
+                <ul class="footer-links">
+                    <li><a href="#">プライバシーポリシー</a></li>
+                    <li><a href="#">特定商取引法に基づく表記</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 固定予約ボタン -->
+    <div class="fixed-reservation">
+        <a href="#reservation" class="btn-fixed-reservation"><i class="fas fa-calendar-check"></i> ご予約はこちら</a>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+    // アニメーション効果の追加
+    document.addEventListener('DOMContentLoaded', function() {
+        // スクロール監視の設定
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        });
+        
+        // 監視対象の要素
+        const staggerItems = document.querySelectorAll('.stagger-item');
+        staggerItems.forEach((item, index) => {
+            // ずらしてアニメーション適用
+            setTimeout(() => {
+                observer.observe(item);
+            }, 100 * index);
+        });
+    });
+    </script>
     </header>
 
     <!-- メインビジュアル -->
@@ -508,140 +648,3 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- 予約・問い合わせ -->
-    <section id="reservation" class="reservation">
-        <div class="container">
-            <h2 class="section-title">ご予約・お問い合わせ</h2>
-            <p class="section-subtitle">お気軽にご連絡ください</p>
-            
-            <div class="reservation-content">
-                <div class="reservation-methods">
-                    <div class="reservation-method">
-                        <h3><i class="fas fa-phone"></i> 電話予約</h3>
-                        <p>お電話でのご予約も承っております。ご不明点なども直接ご質問いただけます。</p>
-                        <a href="tel:000-000-0000" class="btn-tel">000-000-0000</a>
-                        <p class="reservation-hours">受付時間：10:00〜19:00（定休日を除く）</p>
-                    </div>
-                </div>
-                
-                <div class="contact-form">
-                    <h3>お問い合わせフォーム</h3>
-                    <form action="#" method="post">
-                        <div class="form-group">
-                            <label for="name">お名前 <span class="required">必須</span></label>
-                            <input type="text" id="name" name="name" placeholder="例：山田 花子" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">メールアドレス <span class="required">必須</span></label>
-                            <input type="email" id="email" name="email" placeholder="例：example@mail.com" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="tel">電話番号</label>
-                            <input type="tel" id="tel" name="tel" placeholder="例：090-1234-5678">
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">お問い合わせ内容 <span class="required">必須</span></label>
-                            <select id="subject" name="subject" required>
-                                <option value="">選択してください</option>
-                                <option value="reservation">予約について</option>
-                                <option value="menu">メニュー・料金について</option>
-                                <option value="first">初めての来店について</option>
-                                <option value="other">その他</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">メッセージ <span class="required">必須</span></label>
-                            <textarea id="message" name="message" placeholder="ご質問・ご相談内容をご記入ください" required></textarea>
-                        </div>
-                        <div class="form-submit">
-                            <button type="submit" class="btn-submit">送信する <i class="fas fa-paper-plane"></i></button>
-                        </div>
-                        <p class="form-privacy">
-                            ※ご入力いただいた個人情報は、お問い合わせへの対応以外には使用いたしません。<br>
-                            <a href="#">プライバシーポリシー</a>をご確認ください。
-                        </p>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- フッター -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-info">
-                    <h2 class="footer-logo">Straight Beauty Salon</h2>
-                    <p class="footer-address">〒000-0000 東京都○○区○○町0-0-0 ○○ビル1F</p>
-                    <p class="footer-tel">TEL: 000-000-0000</p>
-                    <p class="footer-hours">営業時間: 10:00〜19:00（最終受付18:00）</p>
-                    <p class="footer-closed">定休日: 毎週月曜日、第3火曜日</p>
-                </div>
-                <div class="footer-nav">
-                    <ul>
-                        <li><a href="#about">サロン紹介</a></li>
-                        <li><a href="#features">特徴・強み</a></li>
-                        <li><a href="#gallery">ビフォーアフター</a></li>
-                        <li><a href="#menu">メニュー・料金</a></li>
-                        <li><a href="#stylists">スタイリスト</a></li>
-                        <li><a href="#access">アクセス</a></li>
-                        <li><a href="#reservation">ご予約</a></li>
-                    </ul>
-                </div>
-                <div class="footer-social">
-                    <h3>Follow Us</h3>
-                    <div class="social-links">
-                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="social-link" aria-label="LINE"><i class="fab fa-line"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p class="copyright">&copy; 2025 Straight Beauty Salon All Rights Reserved.</p>
-                <ul class="footer-links">
-                    <li><a href="#">プライバシーポリシー</a></li>
-                    <li><a href="#">特定商取引法に基づく表記</a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-
-    <!-- 固定予約ボタン -->
-    <div class="fixed-reservation">
-        <a href="#reservation" class="btn-fixed-reservation"><i class="fas fa-calendar-check"></i> ご予約はこちら</a>
-    </div>
-
-    <script src="js/script.js"></script>
-    <script>
-    // アニメーション効果の追加
-    document.addEventListener('DOMContentLoaded', function() {
-        // スクロール監視の設定
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.1
-        });
-        
-        // 監視対象の要素
-        const staggerItems = document.querySelectorAll('.stagger-item');
-        staggerItems.forEach((item, index) => {
-            // ずらしてアニメーション適用
-            setTimeout(() => {
-                observer.observe(item);
-            }, 100 * index);
-        });
-    });
-    </script>
-</body>
-</html>
